@@ -30,7 +30,7 @@ class EntradaValidator @Inject constructor(
         if (cantidad < 0) {
             return ValidationResult(isValid = false, error = "Debe ser un valor positivo.")
         }
-        if (cantidad > 100) {
+        if (cantidad > 1000) {
             return ValidationResult(isValid = false, error = "El valor no puede ser mayor a 1000.")
         }
         return ValidationResult(isValid = true)
